@@ -540,6 +540,3 @@ ubtu20_sugroup_users: "root"
 ubtu20_varlog_location: "/var/log/sudo.log"
 
 ubtu20cis_min_uid: 1000
-
-# taejon test
-machine_uuid: "ttttttttttt"

@@ -195,7 +195,8 @@ echo "#############"
 echo "Audit Started"
 echo "#############"
 echo
-$AUDIT_BIN -g "$audit_content_dir/$AUDIT_FILE" --vars "$varfile_path"  --vars-inline "$audit_json_vars" v $format_output > "$audit_out"
+#$AUDIT_BIN -g "$audit_content_dir/$AUDIT_FILE" --vars "$varfile_path"  --vars-inline "$audit_json_vars" v $format_output > "$audit_out"
+$AUDIT_BIN -g "$audit_content_dir/$AUDIT_FILE" --vars "$varfile_path"  --vars-inline "$audit_json_vars" v $format_output
 
 # create screen output
 if [ "$(grep -c $BENCHMARK "$audit_out")" != 0 ]  || [ "$format" = junit ] || [ "$format" = tap ]; then
